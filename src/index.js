@@ -80,6 +80,25 @@ textBottom[1].textContent = siteContent["main-content"]["product-content"];
 textBottom[2].textContent = siteContent["main-content"]["vision-content"];
 
 
+//Call To Action
+document.querySelector(".cta h1").textContent = siteContent.cta.h1;
+document.querySelector(".cta button").textContent = siteContent.cta.button;
+
+//Nav Links
+const navLinks = document.querySelectorAll("nav a");
+const navLinkTexts = Object.values(siteContent.nav);
+navLinks.forEach((link, index) => {
+  link.textContent = navLinkTexts[index]
+  link.classList.add("italic")
+});
+
+
+
+
+
+
+
+
 
 
 
