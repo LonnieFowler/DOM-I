@@ -38,5 +38,15 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
     "accent-img": "http://localhost:9000/img/accent.png",
   },
 };
+//Images
+const logoImage= document.querySelector("#logo-img");
+logoImage.src = siteContent.images["logo-img"];
 
-console.log('project wired!')
+const ctaImg = document.querySelector("#cta-img");
+ctaImg.src = siteContent.images["cta-img"];
+
+const accentImg = document.querySelector("#middle-img");
+accentImg.src = siteContent.images["accent-img"];
+
+
+
